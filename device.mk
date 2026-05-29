@@ -43,8 +43,8 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/mixer_paths_parrot_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/mixer_paths_parrot_qrd.xml \
-    $(LOCAL_PATH)/configs/audio/resourcemanager_parrot_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/resourcemanager_parrot_qrd.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_parrot_qrd_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/mixer_paths_parrot_qrd_sku1.xml \
+    $(LOCAL_PATH)/configs/audio/resourcemanager_parrot_qrd_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/resourcemanager_parrot_qrd_sku1.xml \
     $(LOCAL_PATH)/configs/audio/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
     $(LOCAL_PATH)/configs/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
@@ -74,7 +74,7 @@ $(call soong_config_set,lineage_powershare,powershare_path,/sys/class/power_supp
 
 # Properties
 PRODUCT_PACKAGES += \
-    hardware.sku.XT2405V.prop
+    hardware.sku.XT2419V.prop
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
@@ -92,4 +92,4 @@ ODM_MANIFEST_N_FILES := \
     device/motorola/sm7435-common/vintf/manifest_ss.xml
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/avatrn/avatrn-vendor.mk)
+$(call inherit-product, vendor/motorola/boston/boston-vendor.mk)
