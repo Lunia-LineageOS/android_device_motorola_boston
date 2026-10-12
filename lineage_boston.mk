@@ -35,5 +35,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct="boston_g" \
-    BuildDesc="boston_g-user 15 V1UBS35H.97-24-16 551d6-ff860 release-keys" \
-    BuildFingerprint="motorola/boston_g/boston:15/V1UBS35H.97-24-16/551d6-ff860:user/release-keys"
+    BuildDesc="boston_g-user 15 V1UBS35H.97-24-22 ae83c2-64d86 release-keys MV-299" \
+    BuildFingerprint="motorola/boston_g/boston:15/V1UBS35H.97-24-22/ae83c2-64d86:user/release-keys"
