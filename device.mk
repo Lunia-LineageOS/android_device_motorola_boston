@@ -97,9 +97,11 @@ $(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
 # VINTF
 ODM_MANIFEST_SKUS += dn n
 ODM_MANIFEST_DN_FILES := \
-    $(LOCAL_PATH)/vintf/manifest_dn.xml
+    $(LOCAL_PATH)/vintf/manifest_dn.xml \
+    $(LOCAL_PATH)/vintf/manifest_fingerprint.xml
 ODM_MANIFEST_N_FILES := \
     $(LOCAL_PATH)/vintf/manifest_n.xml \
+    $(LOCAL_PATH)/vintf/manifest_fingerprint.xml \
     device/motorola/sm7435-common/vintf/manifest_ss.xml
 
 # Inherit from vendor blobs
