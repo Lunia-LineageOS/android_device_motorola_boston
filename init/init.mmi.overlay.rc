@@ -44,6 +44,7 @@ on boot
     # allow TCMD to access cci for OIS test
     chmod 0660 /dev/cci_intf
     chown system camera /dev/cci_intf
+    chmod 0666 /mnt/vendor/persist/sensors/registry/registry/icm4x6xx_0_platform.gyro.fac_cal.bias
 
     # change permission of brightness
     chown system system /sys/class/backlight/aw99703-bl/brightness
